@@ -47,24 +47,90 @@
                         <a href="https://researchgate.net/profile/Sagar-Bhattarai-2" target="_blank">ResearchGate</a>.
                     </p>
                 </div>
-               </div>
+                <!--About content end-->
+            </div>
+        </div>
     </div>
+
+    <hr>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 blogleft contact text-xs-center">
+                <form id="contactform" action="https://formspree.io/f/xzzpqype" method="POST">
+                    <h3 class="contactTitle">Contact</h3>
+                    <p>Feel free to get in touch with me via social media or by sending me a message below.</p>
+                    <!--contact form start-->
+                    <div class="row conrow">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <input type="text" name="name" placeholder="Your name" class="form-control">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <input type="email" name="_replyto" placeholder="Your email" class="form-control">
+                            <input type="hidden" name="_subject" value="PORTFOLIO EMAIL!" />
+                        </div>
+                    </div>
+                    <div class="row conrow">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <textarea placeholder="Your message" name="message" class="form-control" rows="3"></textarea>
+                            <input type="text" name="_gotcha" style="display:none" />
+                        </div>
+                    </div>
+                    <div class="row conrow">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input type="submit" value="Send">
+                        </div>
+                    </div>
+                    <div id="simple-msg"></div>
+                </form>
+            </div>
+            <!--contact form end-->
+            <!--contact details start-->
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-md-offset-1 col-lg-offset-1 col-sm-offset-1 col-xs-offset-0 contactSide">
+                <h3 class="contactTitle text-xs-center">Details</h3>
+                <ul style="list-style-type: none; padding-left: 0;" class="list-unstyled contactDetails">
+                    <li>
+                        <i class="fa fa-map-marker"></i>Guwahati, Assam
+                    </li>
+                    <li>
+                        <i class="fa fa-envelope-o"></i>Contact: sgrbhattarai11[at]gmail[dot]com
+                    </li>
+                    <li>
+                        <i class="ai ai-google-scholar"></i>
+                        <a href="https://scholar.google.com/citations?user=1Y2FB0wAAAAJ&hl=en" target="_blank">Google Scholar Page</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-github"></i>
+                        <a href="https://github.com/sgrbhattarai11" target="_blank" style="display: inline-block; color: blue; text-decoration: underline;">GitHub Profile</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/sgrbhattarai11" target="_blank">LinkedIn Profile</a>
+                    </li>
+                </ul>
+            </div>
+            <!--contact details end-->
+        </div>
+    </div>
+
     <!-- Import footer -->
     <div data-include="footer"></div>
+
     <!-- Google ReCaptchas -->
     <script src="https://www.google.com/recaptcha/enterprise.js?render=6LdhkAAlAAAAAEBabRsENwuWbJ0gQQgJhfrtm0XB"></script>
     <script>
-      grecaptcha.enterprise.ready(function() {
-        grecaptcha.enterprise.execute('6LdhkAAlAAAAAEBabRsENwuWbJ0gQQgJhfrtm0XB', {
-          action: 'login'
-        }).then(function(token) {
-          ...
+        grecaptcha.enterprise.ready(function() {
+            grecaptcha.enterprise.execute('6LdhkAAlAAAAAEBabRsENwuWbJ0gQQgJhfrtm0XB', {
+                action: 'login'
+            }).then(function(token) {
+                // your recaptcha callback here
+            });
         });
-      });
     </script>
-    <!--Javascriptfile start -->
+
+    <!--Javascript file start -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script src="dist/js/lightbox-plus-jquery.min.js"></script>
-  </body>
+</body>
 </html>
