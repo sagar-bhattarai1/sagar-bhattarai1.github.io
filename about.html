@@ -47,9 +47,24 @@
                         <a href="https://researchgate.net/profile/Sagar-Bhattarai-2" target="_blank">ResearchGate</a>.
                     </p>
                 </div>
-                <!--About content end-->
-            </div>
-        </div>
+               </div>
     </div>
-</body>
+    <!-- Import footer -->
+    <div data-include="footer"></div>
+    <!-- Google ReCaptchas -->
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LdhkAAlAAAAAEBabRsENwuWbJ0gQQgJhfrtm0XB"></script>
+    <script>
+      grecaptcha.enterprise.ready(function() {
+        grecaptcha.enterprise.execute('6LdhkAAlAAAAAEBabRsENwuWbJ0gQQgJhfrtm0XB', {
+          action: 'login'
+        }).then(function(token) {
+          ...
+        });
+      });
+    </script>
+    <!--Javascriptfile start -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script src="dist/js/lightbox-plus-jquery.min.js"></script>
+  </body>
 </html>
