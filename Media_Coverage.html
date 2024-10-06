@@ -1,148 +1,87 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media Coverage - Sagar Bhattarai</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,600,700' rel='stylesheet' type='text/css'>
-    <style>
-        body {
-            font-family: 'Lato', sans-serif;
-        }
+   <head>
+      <meta charset="utf-8">
+      <title>Sagar Bhattarai - Media Coverage</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- <link rel="icon" type="image/png" href="images/logo.png"> -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/component.css">
+      <script src="js/modernizr.custom.js"></script>
+      <link href='https://fonts.googleapis.com/css?family=Lato:300italic,400italic,600italic,700italic,800italic,400,600,700,800,300' rel='stylesheet' type='text/css'>
+      <script src="js/loader_htmls.js"></script>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131953460-1"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         gtag('config', 'UA-131953460-1');
+      </script>
+   </head>
+   <body>
+      <!-- Import header -->
+      <div data-include="header"></div>
 
-        /* Header Section */
-        .header {
-            background-color: #f8f9fa;
-            padding: 15px 0;
-            text-align: center;
-            font-size: 24px;
-            font-weight: bold;
-            border-bottom: 2px solid #dee2e6;
-        }
+      <div class="container">
+         <div class="row content publications" style="padding-left: 0;">
+            <h3 class="contactTitle text-xs-center">Media Coverage</h3>
+            
+            <!-- Media Coverage List -->
+            <div class="media-coverage-list">
+               <ul>
+                  <li>
+                     <a href="https://www.youtube.com/watch?app=desktop&v=854QCf_DwPU" target="_blank">
+                        <i class="fa fa-youtube-play"></i> News Live Coverage
+                     </a>
+                  </li>
+                  <li>
+                     <a href="https://www.facebook.com/assamtalkslive/videos/326320497208984/" target="_blank">
+                        <i class="fa fa-facebook"></i> ASSAM TALKS LIVE Coverage
+                     </a>
+                  </li>
+                  <li>
+                     <a href="https://www.facebook.com/story.php?story_fbid=3837373476540387&id=100008033171309&_rdr" target="_blank">
+                        <i class="fa fa-facebook"></i> Facebook Story 1
+                     </a>
+                  </li>
+                  <li>
+                     <a href="https://www.facebook.com/?next=https%3A%2F%2Fm.facebook.com%2Fstory.php%3Fstory_fbid%3D3836862793258122%26id%3D100008033171309&_rdr" target="_blank">
+                        <i class="fa fa-facebook"></i> Facebook Story 2
+                     </a>
+                  </li>
+                  <li>
+                     <a href="https://www.facebook.com/story.php?story_fbid=927490626063008&id=100064062369322&_rdr" target="_blank">
+                        <i class="fa fa-facebook"></i> Gorkhali Colours Coverage
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
 
-        /* Media Coverage Header */
-        .media-coverage-header {
-            text-align: center;
-            font-size: 28px;
-            font-weight: bold;
-            padding: 20px 0;
-            color: black;
-        }
+      <hr>
 
-        .media-coverage-list {
-            margin: 30px auto;
-            max-width: 900px;
-            padding: 20px;
-        }
+      <!-- Import footer -->
+      <div data-include="footer"></div>
 
-        .media-coverage-list a {
-            display: block;
-            margin: 10px 0;
-            font-size: 18px;
-            color: #007bff;
-            text-decoration: none;
-        }
-
-        .media-coverage-list a:hover {
-            color: #0056b3;
-        }
-
-        .media-coverage-list i {
-            margin-right: 10px;
-            font-size: 20px;
-        }
-
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-
-        .social-icons a {
-            color: #007bff;
-            font-size: 20px;
-            margin: 0 15px;
-        }
-
-        .social-icons a:hover {
-            color: #0056b3;
-        }
-
-        /* Footer Section */
-        .footer {
-            background-color: #f8f9fa;
-            padding: 20px 0;
-            text-align: center;
-            border-top: 2px solid #dee2e6;
-            font-size: 16px;
-        }
-
-        .footer p {
-            margin: 10px 0;
-            color: #333;
-        }
-
-        .footer a {
-            color: #007bff;
-            text-decoration: none;
-        }
-
-        .footer a:hover {
-            color: #0056b3;
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Header Section -->
-    <div class="header">
-        Sagar Bhattarai - Media Coverage
-    </div>
-
-    <div class="container">
-        <!-- Media Coverage Header -->
-        <div class="media-coverage-header">
-            MEDIA COVERAGE
-        </div>
-
-        <!-- Media Coverage List -->
-        <div class="media-coverage-list">
-            <a href="https://www.youtube.com/watch?app=desktop&v=854QCf_DwPU" target="_blank">
-                <i class="fa fa-youtube-play"></i> News Live Coverage
-            </a>
-            <a href="https://www.facebook.com/assamtalkslive/videos/326320497208984/" target="_blank">
-                <i class="fa fa-facebook"></i> ASSAM TALKS LIVE Coverage
-            </a>
-            <a href="https://www.facebook.com/story.php?story_fbid=3837373476540387&id=100008033171309&_rdr" target="_blank">
-                <i class="fa fa-facebook"></i> Facebook Story 1
-            </a>
-            <a href="https://www.facebook.com/?next=https%3A%2F%2Fm.facebook.com%2Fstory.php%3Fstory_fbid%3D3836862793258122%26id%3D100008033171309&_rdr" target="_blank">
-                <i class="fa fa-facebook"></i> Facebook Story 2
-            </a>
-            <a href="https://www.facebook.com/story.php?story_fbid=927490626063008&id=100064062369322&_rdr" target="_blank">
-                <i class="fa fa-facebook"></i> Gorkhali Colours Coverage
-            </a>
-        </div>
-
-        <!-- Social Icons (optional) -->
-        <div class="social-icons">
-            <a href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube"></i></a>
-            <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
-        </div>
-    </div>
-
-    <!-- Footer Section -->
-    <div class="footer">
-        <p>&copy; 2024 Sagar Bhattarai. All rights reserved.</p>
-        <p>Follow me on <a href="https://www.youtube.com" target="_blank">YouTube</a> and <a href="https://www.facebook.com" target="_blank">Facebook</a></p>
-    </div>
-
-    <!-- Scripts -->
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-
-</body>
+      <!--Javascriptfile start -->
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript" src="js/bootstrap.js"></script>
+      <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+      <script src="js/modernizr.custom.js"></script>
+      <script src="js/masonry.pkgd.min.js"></script>
+      <script src="js/imagesloaded.pkgd.min.js"></script>
+      <script src="js/classie.js"></script>
+      <script src="js/colorfinder-1.1.js"></script>
+      <script src="js/gridScrollFx.js"></script>
+      <script>
+         var masonryClass, container = $("#grid");
+         	new GridScrollFx( document.getElementById( 'grid' ), {
+         		viewportFactor : 0.4
+         	} );
+      </script>
+   </body>
 </html>
