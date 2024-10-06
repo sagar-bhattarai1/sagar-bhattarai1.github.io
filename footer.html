@@ -4,12 +4,15 @@
         <h3>Media Coverage</h3>
         <p>Check out my interviews and social media presence:</p>
 
-        <div class="social-icons">
-            <!-- YouTube Link -->
+        <!-- YouTube Styled Button -->
+        <div class="youtube-button">
             <a href="https://www.youtube.com/watch?app=desktop&v=854QCf_DwPU" target="_blank">
-                <i class="fa fa-youtube-play"></i> News Live Coverage
+                <i class="fa fa-youtube-play"></i> News Live coverage
             </a>
-            <!-- Facebook Links -->
+        </div>
+
+        <!-- Facebook Links Section -->
+        <div class="social-icons">
             <a href="https://www.facebook.com/assamtalkslive/videos/326320497208984/" target="_blank">
                 <i class="fa fa-facebook"></i> ASSAM TALKS LIVE Coverage
             </a>
@@ -25,8 +28,9 @@
     </div>
 </footer>
 
-<!-- Footer CSS Styling -->
+<!-- CSS Styling for Footer, YouTube Button, and Facebook Links -->
 <style>
+    /* General Footer Styling */
     .footer {
         background-color: #f8f9fa; /* Light background */
         color: #333; /* Dark text for readability */
@@ -35,24 +39,41 @@
         border-top: 1px solid #dee2e6; /* Subtle top border */
     }
 
-    .footer a {
-        color: #007bff; /* Link color */
-        text-decoration: none;
-        font-weight: bold;
-        margin: 0 15px;
-        transition: color 0.3s ease;
-    }
-
-    .footer a:hover {
-        color: #0056b3; /* Hover color */
-    }
-
     .footer h3 {
         font-size: 24px;
         margin-bottom: 20px;
         color: #000; /* Darker heading */
     }
 
+    .footer p {
+        margin: 20px 0 10px;
+        font-size: 16px;
+    }
+
+    /* Styling for YouTube Button */
+    .youtube-button a {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 18px;
+        color: #007bff; /* Blue text */
+        text-decoration: none;
+        background-color: #f1f3f5; /* Light gray background */
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        font-weight: bold;
+    }
+
+    .youtube-button a:hover {
+        background-color: #007bff;
+        color: #fff; /* White text on hover */
+    }
+
+    .youtube-button i {
+        font-size: 24px;
+        margin-right: 8px;
+    }
+
+    /* Styling for Facebook Links */
     .social-icons {
         margin-top: 20px;
         margin-bottom: 20px;
@@ -74,12 +95,10 @@
         color: #fff; /* Invert text color on hover */
     }
 
-    .footer p {
-        margin: 20px 0 10px;
-        font-size: 16px;
-    }
-
     .social-icons i {
         margin-right: 8px;
     }
 </style>
+
+<!-- Make sure to include Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
