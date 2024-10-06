@@ -4,18 +4,24 @@
       <meta charset="utf-8">
       <title>Sagar Bhattarai - Media Coverage</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- <link rel="icon" type="image/png" href="images/logo.png"> -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="css/bootstrap.css">
       <link rel="stylesheet" href="css/style.css">
       <link rel="stylesheet" href="css/component.css">
       <script src="js/modernizr.custom.js"></script>
-      <link href='https://fonts.googleapis.com/css?family=Lato:300,400,600,700' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Lato:300italic,400italic,600italic,700italic,800italic,400,600,700,800,300' rel='stylesheet' type='text/css'>
+      <script src="js/loader_htmls.js"></script>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131953460-1"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         gtag('config', 'UA-131953460-1');
+      </script>
       <style>
-         body {
-            font-family: 'Lato', sans-serif;
-         }
-
-         /* Media Coverage Header */
+         /* Styling the Media Coverage Section */
          .media-coverage-header {
             text-align: center;
             font-size: 28px;
@@ -24,43 +30,48 @@
             color: black;
          }
 
-         /* Container for Buttons */
-         .media-coverage-buttons {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+         .media-coverage-list {
             margin: 30px auto;
+            max-width: 900px;
+            padding: 20px;
          }
 
-         /* Button Styling */
-         .media-btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 20px;
-            width: 60px;
-            height: 60px;
-            background-color: #007bff;
-            color: white;
-            margin: 15px;
-            border-radius: 50%;
+         .media-coverage-list ul {
+            list-style-type: none;
+            padding: 0;
+         }
+
+         .media-coverage-list li {
+            margin: 15px 0;
+            font-size: 18px;
+         }
+
+         .media-coverage-list a {
+            color: #007bff;
             text-decoration: none;
-            transition: background-color 0.3s ease, transform 0.3s ease;
          }
 
-         .media-btn:hover {
-            background-color: #0056b3;
-            transform: scale(1.1);
+         .media-coverage-list a:hover {
+            color: #0056b3;
          }
 
-         .media-btn i {
-            font-size: 24px;
+         .media-coverage-list i {
+            margin-right: 10px;
+            font-size: 20px;
          }
 
-         @media (max-width: 768px) {
-            .media-btn {
-               margin: 10px;
-            }
+         /* Add padding between each link */
+         .media-coverage-list li a {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+         }
+
+         /* Optional: Add a light border to make the list clearer */
+         .media-coverage-list li a:hover {
+            background-color: #f1f1f1;
+            padding-left: 10px;
+            transition: all 0.3s ease;
          }
       </style>
    </head>
@@ -72,47 +83,77 @@
          <div class="row content publications" style="padding-left: 0;">
             <h3 class="media-coverage-header">Media Coverage</h3>
             
-            <!-- Media Coverage Buttons -->
-            <div class="media-coverage-buttons">
-               <a href="https://www.youtube.com/watch?app=desktop&v=854QCf_DwPU" class="media-btn" target="_blank">
-                  <i class="fa fa-youtube-play"></i>
-               </a>
-               <a href="https://www.facebook.com/assamtalkslive/videos/326320497208984/" class="media-btn" target="_blank">
-                  <i class="fa fa-facebook"></i>
-               </a>
-               <a href="https://www.facebook.com/story.php?story_fbid=3837373476540387&id=100008033171309&_rdr" class="media-btn" target="_blank">
-                  <i class="fa fa-facebook"></i>
-               </a>
-               <a href="https://www.facebook.com/?next=https%3A%2F%2Fm.facebook.com%2Fstory.php%3Fstory_fbid%3D3836862793258122%26id%3D100008033171309&_rdr" class="media-btn" target="_blank">
-                  <i class="fa fa-facebook"></i>
-               </a>
-               <a href="https://www.facebook.com/story.php?story_fbid=927490626063008&id=100064062369322&_rdr" class="media-btn" target="_blank">
-                  <i class="fa fa-facebook"></i>
-               </a>
-               <a href="https://www.facebook.com/story.php?story_fbid=836845638623001&id=100068927177680&_rdr" class="media-btn" target="_blank">
-                  <i class="fa fa-facebook"></i>
-               </a>
-               <a href="https://www.facebook.com/story.php?story_fbid=998054615666530&id=100063860025299&_rdr" class="media-btn" target="_blank">
-                  <i class="fa fa-facebook"></i>
-               </a>
-               <a href="https://www.facebook.com/story.php?story_fbid=1017402313467255&id=100055924881499&_rdr" class="media-btn" target="_blank">
-                  <i class="fa fa-facebook"></i>
-               </a>
-               <a href="https://www.facebook.com/100089675414571/videos/2472301136294099/" class="media-btn" target="_blank">
-                  <i class="fa fa-facebook"></i>
-               </a>
-               <a href="https://www.youtube.com/watch?app=desktop&v=2aXtBtlaHss" class="media-btn" target="_blank">
-                  <i class="fa fa-youtube-play"></i>
-               </a>
-               <a href="https://www.facebook.com/61550263392667/videos/414249358359820/" class="media-btn" target="_blank">
-                  <i class="fa fa-facebook"></i>
-               </a>
-               <a href="https://www.facebook.com/DY365/videos/1040660197759805/" class="media-btn" target="_blank">
-                  <i class="fa fa-facebook"></i>
-               </a>
-               <a href="https://www.facebook.com/newsishan/videos/1672076586970844/" class="media-btn" target="_blank">
-                  <i class="fa fa-facebook"></i>
-               </a>
+            <!-- Media Coverage List -->
+            <div class="media-coverage-list">
+               <ul>
+                  <!-- Existing Links -->
+                  <li>
+                     <a href="https://www.youtube.com/watch?app=desktop&v=854QCf_DwPU" target="_blank">
+                        <i class="fa fa-youtube-play"></i> News Live Coverage
+                     </a>
+                  </li>
+                  <li>
+                     <a href="https://www.facebook.com/assamtalkslive/videos/326320497208984/" target="_blank">
+                        <i class="fa fa-facebook"></i> ASSAM TALKS LIVE Coverage
+                     </a>
+                  </li>
+                  <li>
+                     <a href="https://www.facebook.com/story.php?story_fbid=3837373476540387&id=100008033171309&_rdr" target="_blank">
+                        <i class="fa fa-facebook"></i> Facebook Story 1
+                     </a>
+                  </li>
+                  <li>
+                     <a href="https://www.facebook.com/?next=https%3A%2F%2Fm.facebook.com%2Fstory.php%3Fstory_fbid%3D3836862793258122%26id%3D100008033171309&_rdr" target="_blank">
+                        <i class="fa fa-facebook"></i> Facebook Story 2
+                     </a>
+                  </li>
+                  <li>
+                     <a href="https://www.facebook.com/story.php?story_fbid=927490626063008&id=100064062369322&_rdr" target="_blank">
+                        <i class="fa fa-facebook"></i> Gorkhali Colours Coverage
+                     </a>
+                  </li>
+                  <!-- New Links -->
+                  <li>
+                     <a href="https://www.facebook.com/story.php?story_fbid=836845638623001&id=100068927177680&_rdr" target="_blank">
+                        <i class="fa fa-facebook"></i> Facebook Story 3
+                     </a>
+                  </li>
+                  <li>
+                     <a href="https://www.facebook.com/story.php?story_fbid=998054615666530&id=100063860025299&_rdr" target="_blank">
+                        <i class="fa fa-facebook"></i> Facebook Story 4
+                     </a>
+                  </li>
+                  <li>
+                     <a href="https://www.facebook.com/story.php?story_fbid=1017402313467255&id=100055924881499&_rdr" target="_blank">
+                        <i class="fa fa-facebook"></i> Facebook Story 5
+                     </a>
+                  </li>
+                  <li>
+                     <a href="https://www.facebook.com/100089675414571/videos/2472301136294099/" target="_blank">
+                        <i class="fa fa-facebook"></i> Facebook Video 1
+                     </a>
+                  </li>
+                  <li>
+                     <a href="https://www.youtube.com/watch?app=desktop&v=2aXtBtlaHss" target="_blank">
+                        <i class="fa fa-youtube-play"></i> YouTube Video 2
+                     </a>
+                  </li>
+                  <li>
+                     <a href="https://www.facebook.com/61550263392667/videos/414249358359820/" target="_blank">
+                        <i class="fa fa-facebook"></i> Facebook Video 2
+                     </a>
+                  </li>
+                  <li>
+                     <a href="https://www.facebook.com/DY365/videos/1040660197759805/" target="_blank">
+                        <i class="fa fa-facebook"></i> DY365 Facebook Video
+                     </a>
+                  </li>
+                  <li>
+                     <a href="https://www.facebook.com/newsishan/videos/1672076586970844/" target="_blank">
+                        <i class="fa fa-facebook"></i> News Ishan Facebook Video
+                     </a>
+                  </li>
+               </ul>
             </div>
          </div>
       </div>
