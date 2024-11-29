@@ -90,12 +90,15 @@
          }
 
          /* Gallery Styling */
-         .image-gallery img {
-            width: 200px;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-         }
+        .image-gallery img {
+   max-width: 100%; /* Ensures the image fits within the screen width */
+   height: auto; /* Maintains the aspect ratio */
+   border-radius: 8px; /* Keeps the rounded corners */
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds a shadow for style */
+   display: block; /* Prevents extra spacing caused by inline images */
+   margin: 20px auto; /* Adds 20px space above and below, centers the image horizontally */
+}
+
       </style>
    </head>
    <body>
