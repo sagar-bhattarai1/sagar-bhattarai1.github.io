@@ -10,7 +10,7 @@
       <link rel="stylesheet" href="css/component.css">
       <link href='https://fonts.googleapis.com/css?family=Lato:300italic,400italic,600italic,700italic,800italic,400,600,700,800,300' rel='stylesheet' type='text/css'>
       <style>
-         /* Styling the Header */
+         /* Header */
          .media-header {
             text-align: center;
             font-size: 28px;
@@ -43,46 +43,53 @@
 
          /* Sections */
          .media-section {
-            display: none; /* Initially hide all sections */
+            display: none; /* Hide sections by default */
             margin-top: 30px;
          }
 
          .media-section.active {
-            display: block; /* Show active section */
+            display: flex; /* Show active section as flex */
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
          }
 
-         .media-coverage-list ul {
-            list-style-type: none;
-            padding: 0;
-         }
-
-         .media-coverage-list li {
-            margin: 15px 0;
-            font-size: 18px;
-         }
-
-         .media-coverage-list a {
-            color: #007bff;
+         /* Link Styling */
+         .media-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
             text-decoration: none;
+            color: #007bff;
+            font-size: 14px;
+            padding: 10px 15px;
+            width: 200px;
+            text-align: center;
+            transition: transform 0.3s ease;
          }
 
-         .media-coverage-list a:hover {
+         .media-link:hover {
+            transform: scale(1.05);
             color: #0056b3;
          }
 
-         .media-coverage-list i {
+         /* Mimic YouTube Logo for YouTube Links */
+         .youtube-logo {
+            display: inline-block;
+            background-color: red;
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+            padding: 5px 10px;
+            border-radius: 5px;
             margin-right: 10px;
-            font-size: 20px;
+            text-align: center;
          }
 
-         /* Gallery */
-         .image-gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            justify-content: center;
-         }
-
+         /* Gallery Styling */
          .image-gallery img {
             width: 200px;
             height: auto;
@@ -92,7 +99,7 @@
       </style>
    </head>
    <body>
-      <!-- Import header -->
+      <!-- Include Header -->
       <div data-include="header"></div>
 
       <div class="container">
@@ -107,68 +114,41 @@
 
          <!-- Facebook Coverage Section -->
          <div id="facebook-section" class="media-section">
-            <div class="media-coverage-list">
-               <ul>
-                  <li>
-                     <a href="https://www.facebook.com/100069786133671/posts/853599160309614/?mibextid=rS40aB7S9Ucbxw6v" target="_blank">
-                        <i class="fa fa-facebook"></i> Facebook Post 1
-                     </a>
-                  </li>
-                  <li>
-                     <a href="https://www.facebook.com/100064062369322/posts/927490626063008/?mibextid=rS40aB7S9Ucbxw6v" target="_blank">
-                        <i class="fa fa-facebook"></i> Facebook Post 2
-                     </a>
-                  </li>
-                  <li>
-                     <a href="https://www.facebook.com/share/v/JVcHGDKcPJ5erjiu/?mibextid=jmPrMh" target="_blank">
-                        <i class="fa fa-facebook"></i> Facebook Video 1
-                     </a>
-                  </li>
-                  <li>
-                     <a href="https://fb.watch/uKcnnw3OsX/?mibextid=rS40aB7S9Ucbxw6v" target="_blank">
-                        <i class="fa fa-facebook"></i> Facebook Video 2
-                     </a>
-                  </li>
-                  <li>
-                     <a href="https://www.facebook.com/DY365/videos/1040660197759805/?mibextid=rS40aB7S9Ucbxw6v" target="_blank">
-                        <i class="fa fa-facebook"></i> DY365 Facebook Video
-                     </a>
-                  </li>
-               </ul>
-            </div>
+            <a href="https://www.facebook.com/100069786133671/posts/853599160309614/?mibextid=rS40aB7S9Ucbxw6v" target="_blank" class="media-link">
+               <i class="fa fa-facebook"></i> Facebook Post 1
+            </a>
+            <a href="https://www.facebook.com/100064062369322/posts/927490626063008/?mibextid=rS40aB7S9Ucbxw6v" target="_blank" class="media-link">
+               <i class="fa fa-facebook"></i> Facebook Post 2
+            </a>
+            <a href="https://www.facebook.com/share/v/JVcHGDKcPJ5erjiu/?mibextid=jmPrMh" target="_blank" class="media-link">
+               <i class="fa fa-facebook"></i> Facebook Video 1
+            </a>
+            <a href="https://fb.watch/uKcnnw3OsX/?mibextid=rS40aB7S9Ucbxw6v" target="_blank" class="media-link">
+               <i class="fa fa-facebook"></i> Facebook Video 2
+            </a>
          </div>
 
          <!-- YouTube Coverage Section -->
          <div id="youtube-section" class="media-section">
-            <div class="media-coverage-list">
-               <ul>
-                  <li>
-                     <a href="https://youtu.be/2aXtBtlaHss?si=UFWjFubi_PwBneSz" target="_blank">
-                        <i class="fa fa-youtube-play"></i> YouTube Video 1
-                     </a>
-                  </li>
-                  <li>
-                     <a href="https://youtu.be/854QCf_DwPU?si=AbnKOhip23Ww3GaO" target="_blank">
-                        <i class="fa fa-youtube-play"></i> YouTube Video 2
-                     </a>
-                  </li>
-               </ul>
-            </div>
+            <a href="https://youtu.be/2aXtBtlaHss?si=UFWjFubi_PwBneSz" target="_blank" class="media-link">
+               <span class="youtube-logo">YouTube</span> Video 1
+            </a>
+            <a href="https://youtu.be/854QCf_DwPU?si=AbnKOhip23Ww3GaO" target="_blank" class="media-link">
+               <span class="youtube-logo">YouTube</span> Video 2
+            </a>
          </div>
 
          <!-- Image Gallery Section -->
          <div id="gallery-section" class="media-section">
-            <div class="image-gallery">
-               <img src="images/gallery1.jpg" alt="Gallery Image 1">
-               <img src="images/gallery2.jpg" alt="Gallery Image 2">
-               <img src="images/gallery3.jpg" alt="Gallery Image 3">
-               <img src="images/gallery4.jpg" alt="Gallery Image 4">
-               <img src="images/gallery5.jpg" alt="Gallery Image 5">
-            </div>
+            <img src="images/gallery1.jpg" alt="Gallery Image 1">
+            <img src="images/gallery2.jpg" alt="Gallery Image 2">
+            <img src="images/gallery3.jpg" alt="Gallery Image 3">
+            <img src="images/gallery4.jpg" alt="Gallery Image 4">
+            <img src="images/gallery5.jpg" alt="Gallery Image 5">
          </div>
       </div>
 
-      <!-- Import footer -->
+      <!-- Include Footer -->
       <div data-include="footer"></div>
 
       <!-- Javascript -->
