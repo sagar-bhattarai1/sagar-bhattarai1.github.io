@@ -1,162 +1,23 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Sagar Bhattarai</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/flexslider.css">
-    <link href='https://fonts.googleapis.com/css?family=Lato:300italic,400italic,600italic,700italic,800italic,400,600,700,800,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/component.css">
-    <script src="js/modernizr.custom.js"></script>
-    <link rel="stylesheet" href="dist/css/lightbox.min.css">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
-    <script src="js/loader_htmls.js"></script>
-    <style>
-      .btn-group {
-        display: flex;
-        justify-content: start;
-        margin-top: 20px;
-      }
+<header class="navbar navbar-default topNav navbar-fixed-top" id="top" role="banner" style="background-color: #f8f7f8; margin-bottom:0px; padding-bottom:20px;">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a href="/" class="navbar-brand"><img height="40" src="images/logo/logo.png" alt="logo"><span>Sagar Bhattarai</span></a> </div>
 
-      .btn-group a {
-        display: inline-block;
-        padding: 10px 20px;
-        font-size: 16px;
-        font-weight: bold;
-        text-align: center;
-        text-decoration: none;
-        color: black;
-        border: 2px solid black;
-        border-radius: 5px;
-        margin-right: 20px; /* Increase horizontal spacing between buttons */
-        transition: background-color 0.3s ease, color 0.3s ease;
-      }
+    <!--Menu start-->
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/">Home</a></li>
+        <li><a href="publications.html">Publications</a></li>
+         <li><a href="projects.html">Projects</a></li> 
+        <li><a href="achievement-and-participations.html">Achievements and Participations</a></li>
+        <li><a href="Media_Coverage.html">Media Coverage</a></li> 
+<!--         <li><a target="_blank" href="https://docs.google.com/document/d/1dIquDqiUdGKGhw3WKkEnBi9OMcOP_3z-/edit"><u>View My Resume</u></a></li> -->
+<!--         <a target = "_blank" href="https://docs.google.com/document/d/1dIquDqiUdGKGhw3WKkEnBi9OMcOP_3z-/edit" class="dl">View My Resume</a> -->
+      </ul>
+    </nav>
+    <!--Menu end-->
 
-      .btn-group a:last-child {
-        margin-right: 0; /* No extra margin for the last button */
-      }
-
-      .btn-group a:hover {
-        background-color: black;
-        color: white;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Import header -->
-    <div data-include="header"></div>
-    <div class="container">
-      <div class="row content">
-        <!--About image start -->
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 cl">
-          <img src="images/latest/c.jpeg" title="Dr. Sagar Bhattarai" class="img-responsive" alt="Dr. Sagar Bhattarai" style="opacity:0.8;">
-        </div>
-        <!--About image start -->
-        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 cr">
-          <!--About content start -->
-          <div class="clearfix" style="text-align: justify;">
-            <h3 class="text-xs-center">About Dr. Sagar Bhattarai:</h3>
-            <p>Dr. Sagar Bhattarai is a distinguished scientist, researcher, and innovator at the Indian Institute of Technology Guwahati, where he focuses on cutting-edge photovoltaic and perovskite solar cell technologies. He holds a Ph.D. from the National Institute of Technology Arunachal Pradesh, and has previously served as the Head of the Physics Department at Arunachal University of Studies.</p>
-
-            <p>Classified as one of the world’s top 2% scientists by Stanford University (2024), Dr. Bhattarai has contributed extensively to the field of renewable energy, publishing over 50 research papers in top-tier journals. His work involves the development of high-efficiency solar cells, which are critical for the advancement of sustainable energy solutions.</p>
-            
-            <p>He is also an editor at Springer Nature, and his research focuses on innovative approaches in optoelectronics and solar energy materials. Dr. Bhattarai is passionate about using his expertise to tackle global energy challenges.</p>
-
-            <p>Dr. Bhattarai completed his early education at Pub Kamrup College and Sipajhar HS & MP School. He currently resides in Guwahati, Assam, where he continues to drive significant research efforts in solar energy technologies.</p>
-            
-            <!-- Button Group -->
-            <div class="btn-group">
-              <a href="https://drive.google.com/file/d/1E4hOJYVSZsVEuiJGu2arDK3F2ENa0ert/view?usp=sharing" target="_blank" class="dl">View My Resume</a>
-              <a href="gallery.html" target="_blank" class="dl">Gallery</a>
-            </div>
-          </div>
-          <!--About content start -->
-        </div>
-      </div>
-    </div>
-    <hr>
-    <!-- Contact Section -->
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 blogleft contact text-xs-center">
-          <form id="contactform" action="https://formspree.io/f/xzzpqype" method="POST">
-            <h3 class="contactTitle">Contact</h3>
-            <p>Feel free to get in touch with me via social media or by sending a message below.</p>
-            <!--contact form start-->
-            <div class="row conrow">
-              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                <input type="text" name="name" placeholder="Your name" class="form-control">
-              </div>
-              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                <input type="email" name="_replyto" placeholder="Your email" class="form-control">
-                <input type="hidden" name="_subject" value="PORTFOLIO EMAIL!" />
-              </div>
-            </div>
-            <div class="row conrow">
-              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <textarea placeholder="Your message" name="message" class="form-control" rows="3"></textarea>
-                <input type="text" name="_gotcha" style="display:none" />
-              </div>
-            </div>
-            <div class="row conrow">
-              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <input type="submit" value="Send">
-              </div>
-            </div>
-            <div id="simple-msg"></div>
-          </form>
-        </div>
-        <!--contact form end-->
-        <!--contact details start-->
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-md-offset-1 col-lg-offset-1 col-sm-offset-1 col-xs-offset-0 contactSide">
-          <h3 class="contactTitle text-xs-center">Details</h3>
-          <ul style="list-style-type: none; padding-left: 0;" class="list-unstyled contactDetails">
-            <li>
-              <i class="fa fa-map-marker"></i>Guwahati, Assam
-            </li>
-            <li>
-              <i class="fa fa-envelope-o"></i>sgrbhattarai21[at]gmail[dot]com
-            </li>
-            <li>
-              <i class="ai ai-google-scholar"></i>
-              <a href="https://scholar.google.com/citations?user=1Y2FB0wAAAAJ&hl=en" target="_blank">Google Scholar Page</a>
-            </li>
-            <li>
-              <i class="ai ai-researchgate"></i>
-              <a href="https://www.researchgate.net/profile/Sagar-Bhattarai-2" target="_blank">ResearchGate Profile</a>
-            </li>
-            <li>
-              <i class="fa fa-github"></i>
-              <a href="https://github.com/sgrbhattarai11" target="_blank" style="display: inline-block; color: blue; text-decoration: underline;">GitHub Profile</a>
-            </li>
-            <li>
-              <i class="fa fa-linkedin"></i>
-              <a href="https://www.linkedin.com/in/dr-sagar-bhattarai-0818b61b5/" target="_blank">LinkedIn Profile</a>
-            </li>
-          </ul>
-        </div>
-        <!--contact details end-->
-      </div>
-    </div>
-    <!-- Import footer -->
-    <div data-include="footer"></div>
-    <!-- Google ReCaptchas -->
-    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LdhkAAlAAAAAEBabRsENwuWbJ0gQQgJhfrtm0XB"></script>
-    <script>
-      grecaptcha.enterprise.ready(function() {
-        grecaptcha.enterprise.execute('6LdhkAAlAAAAAEBabRsENwuWbJ0gQQgJhfrtm0XB', {
-          action: 'login'
-        }).then(function(token) {
-          // your recaptcha callback here
-        });
-      });
-    </script>
-    <!--Javascriptfile start -->
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-    <script src="dist/js/lightbox-plus-jquery.min.js"></script>
-  </body>
-</html>
+  </div>
+</header>
+<hr style="margin-top: 0px;">
