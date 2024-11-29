@@ -8,12 +8,10 @@
       <link rel="stylesheet" href="css/bootstrap.css">
       <link rel="stylesheet" href="css/style.css">
       <link rel="stylesheet" href="css/component.css">
-      <script src="js/modernizr.custom.js"></script>
       <link href='https://fonts.googleapis.com/css?family=Lato:300italic,400italic,600italic,700italic,800italic,400,600,700,800,300' rel='stylesheet' type='text/css'>
-      <script src="js/loader_htmls.js"></script>
       <style>
-         /* Styling the Media Coverage Section */
-         .media-coverage-header {
+         /* Styling the Header */
+         .media-header {
             text-align: center;
             font-size: 28px;
             font-weight: bold;
@@ -21,10 +19,36 @@
             color: black;
          }
 
-         .media-coverage-list {
-            margin: 30px auto;
-            max-width: 900px;
-            padding: 20px;
+         /* Buttons for Sections */
+         .media-buttons {
+            text-align: center;
+            margin: 20px 0;
+         }
+
+         .media-buttons button {
+            margin: 10px;
+            padding: 15px 30px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+         }
+
+         .media-buttons button:hover {
+            background-color: #0056b3;
+         }
+
+         /* Sections */
+         .media-section {
+            display: none; /* Initially hide all sections */
+            margin-top: 30px;
+         }
+
+         .media-section.active {
+            display: block; /* Show active section */
          }
 
          .media-coverage-list ul {
@@ -51,33 +75,40 @@
             font-size: 20px;
          }
 
-         /* Add padding between each link */
-         .media-coverage-list li a {
+         /* Gallery */
+         .image-gallery {
             display: flex;
-            align-items: center;
-            padding: 10px 0;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
          }
 
-         /* Optional: Add a light border to make the list clearer */
-         .media-coverage-list li a:hover {
-            background-color: #f1f1f1;
-            padding-left: 10px;
-            transition: all 0.3s ease;
+         .image-gallery img {
+            width: 200px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
          }
       </style>
    </head>
    <body>
-      <!-- Import header -->
+      <!-- Header -->
       <div data-include="header"></div>
 
       <div class="container">
-         <div class="row content publications" style="padding-left: 0;">
-            <h3 class="media-coverage-header">Media Coverage</h3>
-            
-            <!-- Media Coverage List -->
+         <h3 class="media-header">Media Coverage</h3>
+         
+         <!-- Buttons for Sections -->
+         <div class="media-buttons">
+            <button onclick="showSection('facebook-section')">Facebook Coverage</button>
+            <button onclick="showSection('youtube-section')">YouTube Coverage</button>
+            <button onclick="showSection('gallery-section')">Image Gallery</button>
+         </div>
+
+         <!-- Facebook Coverage Section -->
+         <div id="facebook-section" class="media-section">
             <div class="media-coverage-list">
                <ul>
-                  <!-- Facebook Links -->
                   <li>
                      <a href="https://www.facebook.com/100069786133671/posts/853599160309614/?mibextid=rS40aB7S9Ucbxw6v" target="_blank">
                         <i class="fa fa-facebook"></i> Facebook Post 1
@@ -99,27 +130,18 @@
                      </a>
                   </li>
                   <li>
-                     <a href="https://www.facebook.com/share/v/1J81rqwqWR1deb4D/?mibextid=xfxF2i" target="_blank">
-                        <i class="fa fa-facebook"></i> Facebook Video 3
-                     </a>
-                  </li>
-                  <li>
-                     <a href="https://www.facebook.com/share/v/HyufqfcUg86RrMYR/?mibextid=qi2Omg" target="_blank">
-                        <i class="fa fa-facebook"></i> Facebook Video 4
-                     </a>
-                  </li>
-                  <li>
-                     <a href="https://www.facebook.com/share/v/NSmNMpyzaCQ2bJU8/?mibextid=qi2Omg" target="_blank">
-                        <i class="fa fa-facebook"></i> Facebook Video 5
-                     </a>
-                  </li>
-                  <li>
                      <a href="https://www.facebook.com/DY365/videos/1040660197759805/?mibextid=rS40aB7S9Ucbxw6v" target="_blank">
                         <i class="fa fa-facebook"></i> DY365 Facebook Video
                      </a>
                   </li>
-                  
-                  <!-- YouTube Links -->
+               </ul>
+            </div>
+         </div>
+
+         <!-- YouTube Coverage Section -->
+         <div id="youtube-section" class="media-section">
+            <div class="media-coverage-list">
+               <ul>
                   <li>
                      <a href="https://youtu.be/2aXtBtlaHss?si=UFWjFubi_PwBneSz" target="_blank">
                         <i class="fa fa-youtube-play"></i> YouTube Video 1
@@ -133,15 +155,39 @@
                </ul>
             </div>
          </div>
+
+         <!-- Image Gallery Section -->
+         <div id="gallery-section" class="media-section">
+            <div class="image-gallery">
+               <img src="images/gallery1.jpg" alt="Gallery Image 1">
+               <img src="images/gallery2.jpg" alt="Gallery Image 2">
+               <img src="images/gallery3.jpg" alt="Gallery Image 3">
+               <img src="images/gallery4.jpg" alt="Gallery Image 4">
+               <img src="images/gallery5.jpg" alt="Gallery Image 5">
+            </div>
+         </div>
       </div>
 
-      <hr>
-
-      <!-- Import footer -->
+      <!-- Footer -->
       <div data-include="footer"></div>
 
-      <!-- Javascript Files -->
-      <script type="text/javascript" src="js/jquery.min.js"></script>
-      <script type="text/javascript" src="js/bootstrap.js"></script>
+      <!-- Javascript -->
+      <script>
+         // Function to show the selected section
+         function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.media-section');
+            sections.forEach(section => section.classList.remove('active'));
+
+            // Show the selected section
+            const selectedSection = document.getElementById(sectionId);
+            selectedSection.classList.add('active');
+         }
+
+         // Show the first section by default
+         document.addEventListener('DOMContentLoaded', () => {
+            showSection('facebook-section');
+         });
+      </script>
    </body>
 </html>
