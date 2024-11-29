@@ -152,7 +152,17 @@
       <div data-include="footer"></div>
 
       <!-- Javascript -->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.js"></script>
       <script>
+         // Function to import header and footer
+         $(function () {
+            $('[data-include]').each(function () {
+               var file = $(this).data('include');
+               $(this).load(file + '.html');
+            });
+         });
+
          // Function to show the selected section
          function showSection(sectionId) {
             // Hide all sections
