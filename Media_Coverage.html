@@ -89,15 +89,17 @@
             text-align: center;
          }
 
-         /* Gallery Styling */
-        .image-gallery img {
-   max-width: 100%; /* Ensures the image fits within the screen width */
-   height: auto; /* Maintains the aspect ratio */
+        /* Gallery Styling */
+.image-gallery img {
+   width: 1250px; /* Constrains the image width to 1250px */
+   height: 808px; /* Constrains the image height to 808px */
+   object-fit: cover; /* Ensures the image fills the specified dimensions */
    border-radius: 8px; /* Keeps the rounded corners */
    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds a shadow for style */
    display: block; /* Prevents extra spacing caused by inline images */
    margin: 20px auto; /* Adds 20px space above and below, centers the image horizontally */
 }
+
 
       </style>
    </head>
